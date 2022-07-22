@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Maruti Dzire",
+    "id": "1",
+    "mileage": "24.12",
+    "engine": "1197",
+    "fuel": "petrol",
+    "transmission": "manual/automatic",
+    "seats": "4",
+    "serviceCost": "3546",
+    "price": "799000",
+    "rating": "4"
+  },
+  {
+    "name": "Maruti Baleno",
+    "id": "2",
+    "mileage": "19.56",
+    "price": "1056645",
+    "rating": "4.5",
+    "engine": "1197",
+    "fuel": "petrol",
+    "transmission": "manual/automatic",
+    "seats": "4",
+    "serviceCost": "3656"
+  },
+  {
+    "name": "Hyundai Verna",
+    "id": "3",
+    "mileage": "25.00",
+    "price": "1350956",
+    "rating": "4",
+    "engine": "1497",
+    "fuel": "diesel",
+    "transmission": "manual/automatic",
+    "seats": "4",
+    "serviceCost": "3656"
+  },
+  {
+    "name": "Hyundai Creta",
+    "id": "4",
+    "mileage": "21.4",
+    "price": "1258645",
+    "rating": "4.5",
+    "engine": "1497",
+    "fuel": "diesel",
+    "transmission": "manual/automatic",
+    "seats": "4",
+    "serviceCost": "3656"
+  },
+  {
+    "name": "Maruti Ertiga",
+    "id": "5",
+    "mileage": "26.08",
+    "price": "1048459",
+    "rating": "5",
+    "engine": "1462",
+    "fuel": "diesel",
+    "transmission": "manual/automatic",
+    "seats": "7",
+    "serviceCost": "3949"
+  },
+  {
+    "name": "Maruti Baleno",
+    "id": "6",
+    "mileage": "19.56",
+    "price": "1056645",
+    "rating": "4.5",
+    "engine": "1197",
+    "fuel": "petrol",
+    "transmission": "manual/automatic",
+    "seats": "4",
+    "serviceCost": "3656"
+  },
+  {
+    "name": "Hyundai Verna",
+    "id": "7",
+    "mileage": "25.00",
+    "price": "1350956",
+    "rating": "4",
+    "engine": "1497",
+    "fuel": "diesel",
+    "transmission": "manual/automatic",
+    "seats": "4",
+    "serviceCost": "3656"
+  },
+  {
+    "name": "Hyundai Creta",
+    "id": "8",
+    "mileage": "21.4",
+    "price": "1258645",
+    "rating": "4.5",
+    "engine": "1497",
+    "fuel": "diesel",
+    "transmission": "manual/automatic",
+    "seats": "4",
+    "serviceCost": "3656"
+  },
+  {
+    "name": "Maruti Ertiga",
+    "id": "9",
+    "mileage": "26.08",
+    "price": "1048459",
+    "rating": "5",
+    "engine": "1462",
+    "fuel": "diesel",
+    "transmission": "manual/automatic",
+    "seats": "7",
+    "serviceCost": "3949"
+  }
+]
