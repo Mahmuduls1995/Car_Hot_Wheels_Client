@@ -1,0 +1,22 @@
+.carousel.slide {
+    height: 95vh;
+    background: url(https://ccmechanic.com/wp-content/uploads/2021/09/CCM-H.png);
+    background-size: cover;
+}
+.slider-container {
+    padding: 40px 20px;
+    margin-top: 99px;
+}
+.slider-caption {
+    font-family: 'Rakkas', cursive;
+}
+.slider-caption h3 {
+    font-size: 55px;
+}
+.slider-caption p {
+    font-size: 35px;
+  font-family: 'IBM Plex Serif', serif;
+}
+/* .slider-caption .btn {
+    color: #fff;
+} */
