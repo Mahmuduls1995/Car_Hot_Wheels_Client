@@ -30,7 +30,7 @@ const Payment = () => {
                 key2: "value2"
             }
         }
-        axios.post('http://localhost:5000/createOrder', orderData)
+        axios.post('https://hidden-savannah-51184.herokuapp.com/createOrder', orderData)
             .then(res => {
                 const response = res;
                 const { data } = response;
@@ -43,7 +43,7 @@ const Payment = () => {
                     handler: async (response) => {
                         try {
                             const paymentId = response.razorpay_payment_id;
-                            const url = `http://localhost:5000/capture/${paymentId}`;
+                            const url = `https://hidden-savannah-51184.herokuapp.com/capture/${paymentId}`;
                             const captureResponse = await Axios.post(url, {});
                             console.log(captureResponse.data);
                             window.location.reload();

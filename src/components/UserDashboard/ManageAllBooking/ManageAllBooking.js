@@ -9,10 +9,10 @@ const ManageAllBooking = () => {
     const [booking, setBooking] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('https://hidden-savannah-51184.herokuapp.com/booking')
             .then(res => res.json())
             .then(data => {
-                
+
                 setBooking(data)
                 setLoading(false)
             })
@@ -29,7 +29,7 @@ const ManageAllBooking = () => {
         }).then(wantDelete => {
             if (wantDelete) {
                 const loadingId = toast.loading("Deleting...");
-                const url = `http://localhost:5000/deletedBooking/${id}`
+                const url = `https://hidden-savannah-51184.herokuapp.com/deletedBooking/${id}`
                 fetch(url, {
                     method: 'DELETE'
                 })
@@ -38,7 +38,7 @@ const ManageAllBooking = () => {
                         console.log(data);
                         toast.success('Deleted', {
                             id: loadingId,
-                          });
+                        });
                         if (data.deletedCount > 0) {
                             const remaining = booking.filter(booking => booking?._id !== id)
                             setBooking(remaining);
@@ -65,7 +65,7 @@ const ManageAllBooking = () => {
 
         const modifiedStatus = { id, status }
 
-        axios.patch(`http://localhost:5000/booking/${id}`, modifiedStatus)
+        axios.patch(`https://hidden-savannah-51184.herokuapp.com/booking/${id}`, modifiedStatus)
             .then(res => res.data && toast.success(`Set to ${status}`))
             .catch(error => alert(error.message))
     }
@@ -89,7 +89,7 @@ const ManageAllBooking = () => {
                 </thead>
                 {loading ? <Spinner animation="border" variant="success" /> :
                     booking.map((order, index) => (
-                       
+
                         <tbody>
                             <tr>
                                 <td>{index + 1}</td>

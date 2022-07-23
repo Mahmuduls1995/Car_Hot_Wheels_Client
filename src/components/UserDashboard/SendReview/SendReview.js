@@ -12,7 +12,7 @@ const SendReview = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/review', data)
+        axios.post('https://hidden-savannah-51184.herokuapp.com/review', data)
             .then(res => {
                 if (res.data.insertedId) {
                     toast.success('Thank for Your Feedback!')

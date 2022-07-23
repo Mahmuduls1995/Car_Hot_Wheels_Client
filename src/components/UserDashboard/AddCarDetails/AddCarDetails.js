@@ -40,7 +40,7 @@ const AddCarDetails = () => {
             details: data.details
         }
         console.log(serviceInfo)
-        axios.post('http://localhost:5000/availableCars', serviceInfo)
+        axios.post('https://hidden-savannah-51184.herokuapp.com/availableCars', serviceInfo)
             .then(res => {
                 if (res.data.insertedId) {
                     toast.success('Added', {

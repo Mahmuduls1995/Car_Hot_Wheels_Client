@@ -48,7 +48,7 @@ const BarCharts = () => {
     const colors = scaleOrdinal(schemeCategory10).range();
     const [booking, setBooking] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('https://hidden-savannah-51184.herokuapp.com/booking')
             .then(res => res.json())
             .then(data => {
                 setBooking(data)

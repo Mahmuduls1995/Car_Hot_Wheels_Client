@@ -13,7 +13,7 @@ const ManageAllCar = () => {
     const history = useHistory();
 
     useEffect(() => {
-        fetch('http://localhost:5000/availableCars')
+        fetch('https://hidden-savannah-51184.herokuapp.com/availableCars')
             .then(res => res.json())
             .then(data => {
                 setCars(data);
@@ -51,7 +51,7 @@ const ManageAllCar = () => {
         }).then(proceed => {
             if (proceed) {
                 const loading = toast.loading("Deleting...")
-                const url = `http://localhost:5000/deletedCar/${id}`
+                const url = `https://hidden-savannah-51184.herokuapp.com/deletedCar/${id}`
                 fetch(url, {
                     method: 'DELETE'
                 })

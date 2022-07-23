@@ -16,11 +16,11 @@ const CarDetals = () => {
 
     const history = useHistory();
     useEffect(() => {
-        const url = `http://localhost:5000/availableCars/${id}`
+        const url = `https://hidden-savannah-51184.herokuapp.com/availableCars/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setSpecificCar(data))
-    }, [ ])
+    }, [])
 
     const handleCarBooking = (id) => {
         const uri = `/carBooking/${id}`

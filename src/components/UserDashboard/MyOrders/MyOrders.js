@@ -16,7 +16,7 @@ const MyOrders = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/myBooking/${user.email}`, {
+        fetch(`https://hidden-savannah-51184.herokuapp.com/myBooking/${user.email}`, {
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('idToken')}`
             }
@@ -48,7 +48,7 @@ const MyOrders = () => {
         }).then(wantDelete => {
             if (wantDelete) {
                 const loadingId = toast.loading("Deleting...");
-                const url = `http://localhost:5000/deletedBooking/${id}`
+                const url = `https://hidden-savannah-51184.herokuapp.com/deletedBooking/${id}`
                 fetch(url, {
                     method: 'DELETE'
                 })

@@ -18,7 +18,7 @@ const BookingCar = () => {
     const { register, handleSubmit, reset } = useForm();
 
     useEffect(() => {
-        const url = `http://localhost:5000/availableCars/${id}`
+        const url = `https://hidden-savannah-51184.herokuapp.com/availableCars/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setSpecificDetail(data))
@@ -28,7 +28,7 @@ const BookingCar = () => {
         data.carId = id;
         data.status = "pending";
         data.orderTime = new Date().toLocaleDateString('en-GB');
-        axios.post('http://localhost:5000/booking', data)
+        axios.post('https://hidden-savannah-51184.herokuapp.com/booking', data)
             .then(res => {
                 if (res.data.insertedId) {
                     toast.success('Booking Succesful')
@@ -88,7 +88,7 @@ const BookingCar = () => {
                                     {...register("address", { required: true })}
                                     placeholder="Address"
                                 />
-                                 <br />
+                                <br />
                                 {/* <Button type="submit">Send</Button> */}
                             </Col>
                         </Row>
@@ -100,7 +100,7 @@ const BookingCar = () => {
                         </Button>
                     </div>
                 </form>
-                <Toaster/>
+                <Toaster />
 
             </Container>
         </div>
